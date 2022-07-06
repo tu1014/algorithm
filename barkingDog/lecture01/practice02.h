@@ -20,6 +20,8 @@ int practice02(int arr[], int n) {
     }
 
     return 0;
+
+    // TODO: O(1)로 해결할 방법을 생각해 볼 것
 }
 
 

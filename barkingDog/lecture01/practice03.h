@@ -18,7 +18,7 @@ int practice03(int n) {
 
     return 0;
 
-    // TODO: 모범 답안
+    // TODO: 모범 답안 for 문 효율적으로 작성하기
     /*
 
      for(int i=1; i*i <= n; i++)

@@ -37,16 +37,18 @@ int question() {
     while(L.size() > 0) {
         for(int i=1; i<k; i++) {
             p++;
-            if(p == L.end()) p++;
+            if(p == L.end()) p = L.begin();
         }
         cout << *p;
         p = L.erase(p);
+        if(p == L.end()) p = L.begin();
         if(L.size() != 0)
             cout << ", ";
     }
     cout << ">";
 
-    // TODO: 도전했으나 풀지 못한 문제
+    // TODO: STL list는 원형 이중 연결 리스트가 아니라, 이중 연결 리스트임을 주의하자
+    // end()는 마지막 원소의 다음 노드를 가리킴을 주의하자
 
     return 0;
 }
